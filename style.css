@@ -1,0 +1,76 @@
+/* === GLOBAL === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background: white;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* === HEADER === */
+header {
+  background: pink;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8em;
+}
+
+/* === INTRO === */
+.intro {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* === GALLERY === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.img-container {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s;
+}
+.img-container img.rotated {
+  transform: rotate(360deg);
+}
+/* Overlay teks */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* Judul di bawah gambar */
+.caption {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* === FOOTER === */
+footer {
+  background: pink;
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  margin-top: 20px;
+}
